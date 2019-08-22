@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  background: rgb(236, 226, 84);
+}
+
+code {
+  background: grey;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  background: white;
+  padding: 2rem;
+
+  /* First number is horizontal offset, second number is vertical offset, third number 
+  is the blur */
+  /* box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); */
+  box-shadow: 20px 20px 20px black, 30px 30px 30px red, 100px 100px 100px blue;
+}
+
+.box2 {
+  margin: 10rem auto;
+  background: white;
+  padding: 2rem;
+  position: relative;
+  width: 70%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.box2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 70px rgba(0, 0, 0, 0.5);
+}
+
+.box3 {
+  margin: 0 3rem 0 3rem;
+  display: inline-block;
+  background: white;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.box-lower {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.box-higher {
+  box-shadow: 0 15px 60px 0 rgba(0, 0, 0, 0.5);
+}
